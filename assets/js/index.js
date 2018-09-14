@@ -1,11 +1,4 @@
 const base_url = 'http://api.ecommerce.skinborderevent.ml'
-const data = []
-const dataLocal = JSON.parse(localStorage.getItem('data'))
-
-const cart = dataLocal ? dataLocal[0].cart : []
-const token = dataLocal ? dataLocal[0].token : ''
-const userId = dataLocal ? dataLocal[0].userId : ''
-const totalPrice = dataLocal ? dataLocal[0].totalPrice : 0
 
 var app = new Vue({
   el: '#app',
@@ -13,10 +6,7 @@ var app = new Vue({
     Item: [],
     Category: [],
     error: '',
-    token: token,
-    Cart: cart,
-    cartCount: cart.length,
-    totalPrice: totalPrice
+    token:''
   },
   methods: {
     register: function() {
