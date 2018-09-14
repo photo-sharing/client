@@ -17,6 +17,27 @@
   <body>
     
     <div id="app">
+
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-3">  
+                    <div class="list-group">
+                      <br>
+                      City: <input type="text" v-model="city">
+                      <br>
+                      <button v-on:click="findWeather">Submit</button>
+                    </div>  
+                    <div>
+                      <br>
+                      <p>City: {{ city }}</p>
+                      <p>Weather: {{ weather }}</p>
+                      <p>Temperature: {{ temperature }}</p>
+                    </div>
+                </div>
+    
+            </div>
+          </div>
     
       <footer class="py-3 bg-dark fixed-bottom">
         <div class="container">
